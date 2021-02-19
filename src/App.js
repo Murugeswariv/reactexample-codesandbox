@@ -1,6 +1,6 @@
 import "./styles.css";
 
-export default function App() {
+function DisplayHello() {
   return (
     <div className="App">
       <h1>Hello murugeswarivellilingam</h1>
@@ -8,3 +8,16 @@ export default function App() {
     </div>
   );
 }
+
+function App() {
+  return (
+    <div className="App">
+      <DisplayHello />
+      <Tick />
+    </div>
+  );
+}
+function Tick() {
+  return <div>{new Date().toLocaleTimeString()}</div>;
+}
+export default App;
